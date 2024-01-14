@@ -44,6 +44,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 h3 {
@@ -59,7 +60,7 @@ input {
   font-family: inherit;
   border: none;
   border-radius: 10rem;
-  padding: 1.2rem 3.2rem;
+  padding: 0.8rem 3.2rem;
   font-weight: 700;
   font-size: 1.8rem;
   cursor: pointer;
@@ -97,13 +98,28 @@ input {
   list-style: none;
   width: 80%;
   /* overflow: scroll; */
-  /* min-height: 10vh; */
+  min-height: 65vh;
+
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
   justify-content: center;
   align-content: start;
+}
+
+@media (max-width: 767px) {
+  .list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    text-align: center;
+  }
 }
 
 .list li {
