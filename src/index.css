@@ -111,8 +111,8 @@ input {
 @media (max-width: 767px) {
   .list ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: baseline;
   }
   h1 {
     font-size: 4rem;
