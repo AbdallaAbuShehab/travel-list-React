@@ -120,13 +120,16 @@ input {
   h3 {
     text-align: center;
   }
+
+  .list li {
+    font-size: 1.5rem;
+  }
 }
 
 .list li {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  font-size: 1.5rem;
 }
 
 input[type="checkbox"] {
